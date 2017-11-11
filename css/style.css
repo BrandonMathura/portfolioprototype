@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Oswald');
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+html {
+  font-family: 'Oswald', sans-serif;
+  -webkit-animation: fade 2s;
+}
+.top-nav {
+  background-color: #fff;
+  /*Remove height later on if not needed*/
+  height: 30px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
+nav ul {
+  display: flex;
+  list-style: none;
+  padding: 1%;
+  letter-spacing: 0.5em;
+  /*border-bottom: 1px solid #000;*/
+  background-color: #fff;
+}
+li {
+  padding: 0 10px;
+  margin-left: 3%;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}
+a:hover {
+  opacity: 0.5;
+}
+.head {
+  text-align: center;
+  height: 100vh;
+  background-image: url('../images/city.jpg');
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.head h1 {
+  font-size: 80px;
+  padding: 15%;
+  color: #fff;
+  text-shadow: 1px 1px #000;
+  display: inline-block;
+}
+h1 {
+  font-size: 75px;
+  padding: 2% 2% 2% 4%;
+}
+#about,
+#works,
+#contact {
+  height: 700px;
+}
+@media (max-width: 400px) {
+  .top-nav {
+    height: 25px;
+    padding: 0;
+    letter-spacing: 0;
+  }
+}
+@media (max-width: 400px) {
+  .head h1 {
+    font-size: 50px;
+  }
+}
+@-webkit-keyframes fade {
+  0%   {
+    opacity: 0; }
+  100% {
+    opacity: 1; }
+  }
+}
