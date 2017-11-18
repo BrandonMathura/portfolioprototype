@@ -16,13 +16,13 @@ html {
   top: 0;
   left: 0;
   width: 100%;
+  font-size: 20px;
 }
 nav ul {
   display: flex;
   list-style: none;
   padding: 1%;
   letter-spacing: 0.5em;
-  /*border-bottom: 1px solid #000;*/
   background-color: #fff;
 }
 li {
@@ -51,7 +51,11 @@ a:hover {
   padding: 15%;
   color: #fff;
   text-shadow: 1px 1px #000;
-  display: inline-block;
+  display: flex;
+}
+#hamburger {
+  float: right;
+  display: none;
 }
 h1 {
   font-size: 75px;
@@ -62,15 +66,24 @@ h1 {
 #contact {
   height: 700px;
 }
-@media (max-width: 400px) {
+@media (max-width: 450px) {
   .top-nav {
     height: 25px;
     padding: 0;
-    letter-spacing: 0;
+    font-size: 15px;
+  }
+  nav ul {
+    letter-spacing: 0.3em;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 4500px) {
   .head h1 {
+    font-size: 50px;
+  }
+  .head {
+    height: 100%;
+  }
+  h1 {
     font-size: 50px;
   }
 }
